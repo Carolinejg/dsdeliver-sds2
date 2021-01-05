@@ -19,7 +19,7 @@ public class Product implements Serializable{//a anotaçâo entity diz que essa 
 	private String name;
 	private Double price;
 	private String description;
-	private String imgUri;
+	private String imageUri;
 	
 	public Product() {
 		
@@ -31,7 +31,7 @@ public class Product implements Serializable{//a anotaçâo entity diz que essa 
 		this.name = name;
 		this.price = price;
 		this.description = description;
-		this.imgUri = imgUri;
+		this.imageUri = imgUri;
 	}
 
 	public Long getId() {
@@ -67,11 +67,11 @@ public class Product implements Serializable{//a anotaçâo entity diz que essa 
 	}
 
 	public String getImgUri() {
-		return imgUri;
+		return imageUri;
 	}
 
 	public void setImgUri(String imgUri) {
-		this.imgUri = imgUri;
+		this.imageUri = imgUri;
 	}
 
 	//IMPLEMENTAÇÂO PADRÃO PARA COMPARAR UM OBJETO COM OUTRO
