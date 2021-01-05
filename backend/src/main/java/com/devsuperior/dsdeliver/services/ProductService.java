@@ -20,7 +20,7 @@ public class ProductService {
 	@Transactional(readOnly = true)//somente operaçâo de leitura
 	public List<ProductDTO> findAll() //buscar os produtos do banco de dados usando repository
 	{
-		List<Product>list=repository.findAll();
+		List<Product>list=repository.findAllByOrderByNameAsc();
 		return list.stream().map(x->new ProductDTO(x)).collect(Collectors.toList());//aplica a funçâo para todas os objetos da lista. E dps reconverte para a lista
 	}
 }
