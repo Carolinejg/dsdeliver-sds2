@@ -27,7 +27,7 @@ public class Order implements Serializable{
 	private double longitude;
 	private Instant moment;//para trabalhar com tempo
 	private OrderStatus status;
-	private double total;
+	
 	
 	//para representar a associação de um pedido tendo 1 ou varios produtos e criado uma coleção. 
 	//na regra de negocio não adimite um produto sendo repetido em um mesmo pedido, por isso usou-se o Set, por não aceitar repetição
@@ -42,8 +42,8 @@ public class Order implements Serializable{
 		
 	}
 	//NAO SE COLOCA COLEÇÕES EM CONSTRUTORES
-	public Order(Long id, String address, double latitude, double longitude, Instant moment, OrderStatus status,
-			double total) {
+	public Order(Long id, String address, double latitude, double longitude, Instant moment, OrderStatus status
+			) {
 		super();
 		this.id = id;
 		this.address = address;
@@ -51,7 +51,7 @@ public class Order implements Serializable{
 		this.longitude = longitude;
 		this.moment = moment;
 		this.status = status;
-		this.total = total;
+		
 	}
 
 	public Long getId() {
@@ -102,13 +102,7 @@ public class Order implements Serializable{
 		this.status = status;
 	}
 
-	public double getTotal() {
-		return total;
-	}
-
-	public void setTotal(double total) {
-		this.total = total;
-	}
+	
 	public Set<Product> getProducts() {
 		return products;
 	}
