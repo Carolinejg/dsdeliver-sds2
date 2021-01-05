@@ -2,9 +2,19 @@ package com.devsuperior.dsdeliver.entities;
 
 import java.io.Serializable;
 
-public class Product implements Serializable{
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tb_product")//nome da tabela no banco
+public class Product implements Serializable{//a anotaçâo entity diz que essa classe é uma entidade que será tranformada em tabela
 	private static final long serialVersionUID = 1L;//implementação da classe e da versao 1
-		
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)//diz para o JPA que o id será uma chave primaria autoincrementada 
 	private Long id;
 	private String name;
 	private Double price;

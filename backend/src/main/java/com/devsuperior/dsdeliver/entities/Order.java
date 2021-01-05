@@ -5,9 +5,22 @@ import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tb_order")//nome da tabela no banco
 public class Order implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)//diz para o JPA que o id será uma chave primaria autoincrementada
 	private Long id;
 	private String address;
 	private double latitude;
@@ -18,6 +31,11 @@ public class Order implements Serializable{
 	
 	//para representar a associação de um pedido tendo 1 ou varios produtos e criado uma coleção. 
 	//na regra de negocio não adimite um produto sendo repetido em um mesmo pedido, por isso usou-se o Set, por não aceitar repetição
+	
+	@ManyToMany
+	@JoinTable(name="tb_order_product",
+		joinColumns=@JoinColumn(name="order_id"), 	 //chave estrangeira que fererencia a tabela tb_order
+		inverseJoinColumns = @JoinColumn(name="product_id"))
 	
 	private Set<Product>products= new HashSet<>();
 	
