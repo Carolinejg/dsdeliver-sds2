@@ -1,9 +1,10 @@
 import './App.css';
+import Hello from './Hello';
 
 function App() {
   return (
     <div >
-      <h1>Carol!</h1>
+      <Hello /*usando componente exportado*//>
     </div>
   );
 }
