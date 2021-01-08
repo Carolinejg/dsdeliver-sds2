@@ -1,0 +1,20 @@
+.main-navbar{ /*acessando a classe*/
+    height: 70px;
+    background-color: #DA5C5C;
+    padding-left: 45px;
+    display:flex;/*alinhamento*/
+    align-items: center/*o align só pode ser usado quando
+     usamos o display flex. Alinhando verticalmente ao centro*/;
+    
+
+}
+
+.logo-text{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin-left: 15px;
+
+}
