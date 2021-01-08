@@ -1,12 +1,14 @@
 import './App.css';
 import Navbar from './Navbar';
+import Home from './Home';
 
-
-function App() {
+function App() {//arquivo principal da aplicaçao
   return (
-    <div >
+    </*criando um react fragments, 
+    bloco de código não reprensentado no html*/> 
      <Navbar/>
-    </div>
+     <Home />
+    </>
   );
 }
 
