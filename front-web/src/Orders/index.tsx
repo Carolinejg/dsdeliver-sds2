@@ -1,9 +1,10 @@
+import StepsHeader from './StepsHeader';
 import './styles.css';
 
 function Orders(){//criando a estrutura do componente 
     return(
-        <div>
-            <h1>Orders</h1>
+        <div className="orders-container">
+            <StepsHeader/>
         </div>
     )
 
