@@ -1,4 +1,3 @@
-import { type } from "os";
 import { formatPrice } from "./helpers";
 
 type Props={
@@ -7,7 +6,8 @@ type Props={
     onSubmit: () =>void;
 }
 
-function OrderSummary({ amount, totalPrice, onSubmit}: Props){//criando a estrutura do componente 
+function OrderSummary({ amount, totalPrice, onSubmit}: Props){
+    //criando a estrutura do componente 
     return(
         <div className="order-summary-container">
             <div className="order-summary-content">
