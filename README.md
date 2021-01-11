@@ -17,15 +17,13 @@ Acesso ao projeto na nuvem: https://carolinesouza-sds2.netlify.app/
 ![camdas](https://github.com/Carolinejg/dsdeliver-sds2/blob/main/figuras/camadas.png)
 
 # Tecnologias utilizadas
-## Back end
 - Java
 - Spring Boot
+- H2
+- JPA/HIBERNATE
 - Postman
-## Front end
 - HTML / CSS / JS / TypeScript
 - ReactJS
-
-## Implantação em produção
 - Back end: Heroku
 - Front end web: Netlify
 - Banco de dados: Postgresql
