@@ -27,6 +27,7 @@ public class Order implements Serializable{
 	private double longitude;
 	private Instant moment;//para trabalhar com tempo
 	private OrderStatus status;
+
 	
 	
 	//para representar a associação de um pedido tendo 1 ou varios produtos e criado uma coleção. 
@@ -101,6 +102,15 @@ public class Order implements Serializable{
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+	
+	public Double getTotal() {
+		double sum = 0.0;
+		for(Product p:products) {
+			sum = sum + p.getPrice();
+		}
+		return sum;
+	}
+	
 
 	
 	public Set<Product> getProducts() {
