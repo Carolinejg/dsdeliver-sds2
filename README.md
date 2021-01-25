@@ -22,6 +22,7 @@ Acesso ao projeto na nuvem: https://carolinesouza-sds2.netlify.app/
 # Tecnologias utilizadas
 - Java
 - Spring Boot
+- Maven
 - H2
 - JPA/HIBERNATE
 - Postman
@@ -30,6 +31,8 @@ Acesso ao projeto na nuvem: https://carolinesouza-sds2.netlify.app/
 - Back end: Heroku
 - Front end web: Netlify
 - Banco de dados: Postgresql
+- React Native
+- Expo 
 
 
 
