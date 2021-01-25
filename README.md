@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-O projeto consiste em um sistema de registro e entrega de pedidos. 
+O projeto consiste em um sistema de registros e entrega de pedidos. O usuário efetua a solicitação do pedido no site e a listagem os pedidos podem ser acompanhados pelo entregador na aplicação mobile. O entregador tem a opção de saber os detalhes de um pedido, confirmar a entrega ou iniciar o trajeto de entrega do pedido. 
 
 Acesso ao projeto na nuvem: https://carolinesouza-sds2.netlify.app/
 
@@ -8,6 +8,9 @@ Acesso ao projeto na nuvem: https://carolinesouza-sds2.netlify.app/
 ![Web](https://github.com/Carolinejg/dsdeliver-sds2/blob/main/figuras/web.png)
 
 ![Web 2](https://github.com/Carolinejg/dsdeliver-sds2/blob/main/figuras/web2.png)
+
+## Layout mobile
+![Web](https://github.com/Carolinejg/dsdeliver-sds2/blob/main/figuras/mobile.png)
 
 ## Modelo conceitual
 ![Modelo Conceitual](https://github.com/Carolinejg/dsdeliver-sds2/blob/main/figuras/modelo-conceitual.png)
